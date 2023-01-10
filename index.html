@@ -8,6 +8,8 @@
 <title>Jonathan Lifschitz - Diseñador Web</title>
 <link rel="stylesheet" href="estilos.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="/owl/owl.theme.default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </head>
 
@@ -89,7 +91,38 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="contenedor">
+      <h3>Mis Trabajos</h3>
+      <div class="owl-carousel">
+        <div><img src="/foto1.jpg"></div>
+        <div><img src="/foto2.jpg"></div>
+        <div><img src="/foto3.jpg"></div>
+        <div><img src="/foto4.jpg"></div>
+        <div><img src="/foto5.jpg"></div>
+      </div>
+    </div>
+  </section>
 
-
+  <script src="/owl/jquery.min.js"></script>
+  <script src="/owl/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:4
+          }
+      }
+    })
+  </script>
 </body>
 </html>
